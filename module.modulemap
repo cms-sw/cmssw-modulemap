@@ -121,76 +121,83 @@ module "DataFormatsCommon_xr" {
   module "OrphanHandle.h" { header "DataFormats/Common/interface/OrphanHandle.h" export * }
   module "Association.h" { header "DataFormats/Common/interface/Association.h" export * }
 
-export * }
+  export *
+}
 
 module "DataFormatsProvenance_xr" [system] {
-  module "BranchDescription.h" { header "DataFormats/Provenance/interface/BranchDescription.h" export * export * }
-  module "BranchChildren.h" { header "DataFormats/Provenance/interface/BranchChildren.h" export * export * }
-  module "BranchID.h" { header "DataFormats/Provenance/interface/BranchID.h" export * export * }
-  module "BranchKey.h" { header "DataFormats/Provenance/interface/BranchKey.h" export * export * }
-  module "ElementID.h" { header "DataFormats/Provenance/interface/ElementID.h" export * export * }
-  module "EventAuxiliary.h" { header "DataFormats/Provenance/interface/EventAuxiliary.h" export * export * }
-  module "EventID.h" { header "DataFormats/Provenance/interface/EventID.h" export * export * }
-  module "FileFormatVersion.h" { header "DataFormats/Provenance/interface/FileFormatVersion.h" export * export * }
-  module "FileID.h" { header "DataFormats/Provenance/interface/FileID.h" export * export * }
-  module "FileIndex.h" { header "DataFormats/Provenance/interface/FileIndex.h" export * export * }
-  module "IndexIntoFile.h" { header "DataFormats/Provenance/interface/IndexIntoFile.h" export * export * }
-  module "Hash.h" { header "DataFormats/Provenance/interface/Hash.h" export * export * }
-  module "HashedTypes.h" { header "DataFormats/Provenance/interface/HashedTypes.h" export * export * }
-  module "History.h" { header "DataFormats/Provenance/interface/History.h" export * export * }
-  module "LuminosityBlockAuxiliary.h" { header "DataFormats/Provenance/interface/LuminosityBlockAuxiliary.h" export * export * }
-  module "LuminosityBlockID.h" { header "DataFormats/Provenance/interface/LuminosityBlockID.h" export * export * }
-  module "LuminosityBlockRange.h" { header "DataFormats/Provenance/interface/LuminosityBlockRange.h" export * export * }
-  module "EventRange.h" { header "DataFormats/Provenance/interface/EventRange.h" export * export * }
-  module "ParameterSetBlob.h" { header "DataFormats/Provenance/interface/ParameterSetBlob.h" export * export * }
-  module "ParameterSetID.h" { header "DataFormats/Provenance/interface/ParameterSetID.h" export * export * }
-  module "Parentage.h" { header "DataFormats/Provenance/interface/Parentage.h" export * export * }
-  module "ParentageID.h" { header "DataFormats/Provenance/interface/ParentageID.h" export * export * }
-  module "ProcessConfiguration.h" { header "DataFormats/Provenance/interface/ProcessConfiguration.h" export * export * }
-  module "ProcessConfigurationID.h" { header "DataFormats/Provenance/interface/ProcessConfigurationID.h" export * export * }
-  module "ProcessHistory.h" { header "DataFormats/Provenance/interface/ProcessHistory.h" export * export * }
-  module "ProcessHistoryID.h" { header "DataFormats/Provenance/interface/ProcessHistoryID.h" export * export * }
-  module "ProductID.h" { header "DataFormats/Provenance/interface/ProductID.h" export * export * }
-  module "ProductProvenance.h" { header "DataFormats/Provenance/interface/ProductProvenance.h" export * export * }
-  module "StoredMergeableRunProductMetadata.h" { header "DataFormats/Provenance/interface/StoredMergeableRunProductMetadata.h" export * export * }
-  module "StoredProductProvenance.h" { header "DataFormats/Provenance/interface/StoredProductProvenance.h" export * export * }
-  module "ProductRegistry.h" { header "DataFormats/Provenance/interface/ProductRegistry.h" export * export * }
-  module "RunAuxiliary.h" { header "DataFormats/Provenance/interface/RunAuxiliary.h" export * export * }
-  module "RunID.h" { header "DataFormats/Provenance/interface/RunID.h" export * export * }
-  module "ThinnedAssociationsHelper.h" { header "DataFormats/Provenance/interface/ThinnedAssociationsHelper.h" export * export * }
-  module "Timestamp.h" { header "DataFormats/Provenance/interface/Timestamp.h" export * export * }
-  module "ESRecordAuxiliary.h" { header "DataFormats/Provenance/interface/ESRecordAuxiliary.h" export * export * }
-  module "ViewTypeChecker.h" { header "DataFormats/Provenance/interface/ViewTypeChecker.h" export * export * }
-  module "EventEntryInfo.h" { header "DataFormats/Provenance/interface/EventEntryInfo.h" export * export * }
-  module "EventEntryDescription.h" { header "DataFormats/Provenance/interface/EventEntryDescription.h" export * export * }
-  module "EntryDescriptionID.h" { header "DataFormats/Provenance/interface/EntryDescriptionID.h" export * export * }
-  module "EventAux.h" { header "DataFormats/Provenance/interface/EventAux.h" export * export * }
-  module "EventProcessHistoryID.h" { header "DataFormats/Provenance/interface/EventProcessHistoryID.h" export * export * }
-  module "LuminosityBlockAux.h" { header "DataFormats/Provenance/interface/LuminosityBlockAux.h" export * export * }
-  module "ModuleDescription.h" { header "DataFormats/Provenance/interface/ModuleDescription.h" export * export * }
-  module "RunAux.h" { header "DataFormats/Provenance/interface/RunAux.h" export * export * }
-  module "RunLumiEntryInfo.h" { header "DataFormats/Provenance/interface/RunLumiEntryInfo.h" export * export * }
-export * }
+  module "BranchDescription.h" { header "DataFormats/Provenance/interface/BranchDescription.h" export * }
+  module "BranchChildren.h" { header "DataFormats/Provenance/interface/BranchChildren.h" export * }
+  module "BranchID.h" { header "DataFormats/Provenance/interface/BranchID.h" export * }
+  module "BranchKey.h" { header "DataFormats/Provenance/interface/BranchKey.h" export * }
+  module "ElementID.h" { header "DataFormats/Provenance/interface/ElementID.h" export * }
+  module "EventAuxiliary.h" { header "DataFormats/Provenance/interface/EventAuxiliary.h" export * }
+  module "EventID.h" { header "DataFormats/Provenance/interface/EventID.h" export * }
+  module "FileFormatVersion.h" { header "DataFormats/Provenance/interface/FileFormatVersion.h" export * }
+  module "FileID.h" { header "DataFormats/Provenance/interface/FileID.h" export * }
+  module "FileIndex.h" { header "DataFormats/Provenance/interface/FileIndex.h" export * }
+  module "IndexIntoFile.h" { header "DataFormats/Provenance/interface/IndexIntoFile.h" export * }
+  module "Hash.h" { header "DataFormats/Provenance/interface/Hash.h" export * }
+  module "HashedTypes.h" { header "DataFormats/Provenance/interface/HashedTypes.h" export * }
+  module "History.h" { header "DataFormats/Provenance/interface/History.h" export * }
+  module "LuminosityBlockAuxiliary.h" { header "DataFormats/Provenance/interface/LuminosityBlockAuxiliary.h" export * }
+  module "LuminosityBlockID.h" { header "DataFormats/Provenance/interface/LuminosityBlockID.h" export * }
+  module "LuminosityBlockRange.h" { header "DataFormats/Provenance/interface/LuminosityBlockRange.h" export * }
+  module "EventRange.h" { header "DataFormats/Provenance/interface/EventRange.h" export * }
+  module "ParameterSetBlob.h" { header "DataFormats/Provenance/interface/ParameterSetBlob.h" export * }
+  module "ParameterSetID.h" { header "DataFormats/Provenance/interface/ParameterSetID.h" export * }
+  module "Parentage.h" { header "DataFormats/Provenance/interface/Parentage.h" export * }
+  module "ParentageID.h" { header "DataFormats/Provenance/interface/ParentageID.h" export * }
+  module "ProcessConfiguration.h" { header "DataFormats/Provenance/interface/ProcessConfiguration.h" export * }
+  module "ProcessConfigurationID.h" { header "DataFormats/Provenance/interface/ProcessConfigurationID.h" export * }
+  module "ProcessHistory.h" { header "DataFormats/Provenance/interface/ProcessHistory.h" export * }
+  module "ProcessHistoryID.h" { header "DataFormats/Provenance/interface/ProcessHistoryID.h" export * }
+  module "ProductID.h" { header "DataFormats/Provenance/interface/ProductID.h" export * }
+  module "ProductProvenance.h" { header "DataFormats/Provenance/interface/ProductProvenance.h" export * }
+  module "StoredMergeableRunProductMetadata.h" { header "DataFormats/Provenance/interface/StoredMergeableRunProductMetadata.h" export * }
+  module "StoredProductProvenance.h" { header "DataFormats/Provenance/interface/StoredProductProvenance.h" export * }
+  module "ProductRegistry.h" { header "DataFormats/Provenance/interface/ProductRegistry.h" export * }
+  module "RunAuxiliary.h" { header "DataFormats/Provenance/interface/RunAuxiliary.h" export * }
+  module "RunID.h" { header "DataFormats/Provenance/interface/RunID.h" export * }
+  module "ThinnedAssociationsHelper.h" { header "DataFormats/Provenance/interface/ThinnedAssociationsHelper.h" export * }
+  module "Timestamp.h" { header "DataFormats/Provenance/interface/Timestamp.h" export * }
+  module "ESRecordAuxiliary.h" { header "DataFormats/Provenance/interface/ESRecordAuxiliary.h" export * }
+  module "ViewTypeChecker.h" { header "DataFormats/Provenance/interface/ViewTypeChecker.h" export * }
+  module "EventEntryInfo.h" { header "DataFormats/Provenance/interface/EventEntryInfo.h" export * }
+  module "EventEntryDescription.h" { header "DataFormats/Provenance/interface/EventEntryDescription.h" export * }
+  module "EntryDescriptionID.h" { header "DataFormats/Provenance/interface/EntryDescriptionID.h" export * }
+  module "EventAux.h" { header "DataFormats/Provenance/interface/EventAux.h" export * }
+  module "EventProcessHistoryID.h" { header "DataFormats/Provenance/interface/EventProcessHistoryID.h" export * }
+  module "LuminosityBlockAux.h" { header "DataFormats/Provenance/interface/LuminosityBlockAux.h" export * }
+  module "ModuleDescription.h" { header "DataFormats/Provenance/interface/ModuleDescription.h" export * }
+  module "RunAux.h" { header "DataFormats/Provenance/interface/RunAux.h" export * }
+  module "RunLumiEntryInfo.h" { header "DataFormats/Provenance/interface/RunLumiEntryInfo.h" export * }
+
+  export *
+}
 
 module DataFormatsStdDictionaries_xr {
-  module "DataFormats/StdDictionaries/src/classes_vector.h" { header "DataFormats/StdDictionaries/src/classes_vector.h" export * export * }
+  module "DataFormats/StdDictionaries/src/classes_vector.h" { header "DataFormats/StdDictionaries/src/classes_vector.h" export * }
+
   export *
-export * }
+}
 
 module DataFormatsStdDictionaries_x1r {
-  module "DataFormats/StdDictionaries/src/classes_map.h" { header "DataFormats/StdDictionaries/src/classes_map.h" export * export * }
+  module "DataFormats/StdDictionaries/src/classes_map.h" { header "DataFormats/StdDictionaries/src/classes_map.h" export * }
+
   export *
-export * }
+}
 
 module DataFormatsStdDictionaries_x2r {
-  module "DataFormats/StdDictionaries/src/classes_pair.h" { header "DataFormats/StdDictionaries/src/classes_pair.h" export * export * }
+  module "DataFormats/StdDictionaries/src/classes_pair.h" { header "DataFormats/StdDictionaries/src/classes_pair.h" export * }
+
   export *
-export * }
+}
 
 module DataFormatsStdDictionaries_x3r {
-  module "DataFormats/StdDictionaries/src/classes_others.h" { header "DataFormats/StdDictionaries/src/classes_others.h" export * export * }
+  module "DataFormats/StdDictionaries/src/classes_others.h" { header "DataFormats/StdDictionaries/src/classes_others.h" export * }
+
   export *
-export * }
+}
 
 module FWCoreMessageLogger_xr {
   module "ELmap.h" { header "FWCore/MessageLogger/interface/ELmap.h" export * }
@@ -210,6 +217,7 @@ module FWCoreMessageLogger_xr {
   module "ELlist.h" { header "FWCore/MessageLogger/interface/ELlist.h" export * }
   module "AbstractMLscribe.h" { header "FWCore/MessageLogger/interface/AbstractMLscribe.h" export * }
   module "ErrorObj.h" { header "FWCore/MessageLogger/interface/ErrorObj.h" export * }
+
   export *
 }
 
@@ -343,6 +351,182 @@ module DataFormatsGeometrySurface_xr {
   module "SimpleCylinderBounds.h" { header "DataFormats/GeometrySurface/interface/SimpleCylinderBounds.h" export * }
   module "Cone.h" { header "DataFormats/GeometrySurface/interface/Cone.h" export *}
 
+
+  export *
+}
+
+module DataFormatsCandidate_xr {
+  module "CompositeCandidate.h" { header "DataFormats/Candidate/interface/CompositeCandidate.h" export * }
+  module "ShallowCloneCandidate.h" { header "DataFormats/Candidate/interface/ShallowCloneCandidate.h" export * }
+  module "NamedCompositeCandidateFwd.h" { header "DataFormats/Candidate/interface/NamedCompositeCandidateFwd.h" export * }
+  module "CandidateWithRef.h" { header "DataFormats/Candidate/interface/CandidateWithRef.h" export * }
+  module "LeafRefCandidateT.h" { header "DataFormats/Candidate/interface/LeafRefCandidateT.h" export * }
+  module "component.h" { header "DataFormats/Candidate/interface/component.h" export * }
+  module "CandAssociation.h" { header "DataFormats/Candidate/interface/CandAssociation.h" export * }
+  module "VertexCompositePtrCandidate.h" { header "DataFormats/Candidate/interface/VertexCompositePtrCandidate.h" export * }
+  module "iterator.h" { header "DataFormats/Candidate/interface/iterator.h" export * }
+  module "VertexCompositeCandidate.h" { header "DataFormats/Candidate/interface/VertexCompositeCandidate.h" export * }
+  module "VertexCompositePtrCandidateFwd.h" { header "DataFormats/Candidate/interface/VertexCompositePtrCandidateFwd.h" export * }
+  module "ParticleState.h" { header "DataFormats/Candidate/interface/ParticleState.h" export * }
+  module "CompositeCandidateFwd.h" { header "DataFormats/Candidate/interface/CompositeCandidateFwd.h" export * }
+  module "VertexCompositeCandidateFwd.h" { header "DataFormats/Candidate/interface/VertexCompositeCandidateFwd.h" export * }
+  module "Candidate.h" { header "DataFormats/Candidate/interface/Candidate.h" export * }
+  module "const_iterator.h" { header "DataFormats/Candidate/interface/const_iterator.h" export * }
+  module "CandMatchMapMany.h" { header "DataFormats/Candidate/interface/CandMatchMapMany.h" export * }
+  module "ShallowClonePtrCandidate.h" { header "DataFormats/Candidate/interface/ShallowClonePtrCandidate.h" export * }
+  module "NamedCompositeCandidate.h" { header "DataFormats/Candidate/interface/NamedCompositeCandidate.h" export * }
+  module "CandMatchMap.h" { header "DataFormats/Candidate/interface/CandMatchMap.h" export * }
+  module "CompositeRefCandidate.h" { header "DataFormats/Candidate/interface/CompositeRefCandidate.h" export * }
+  module "CandidateFwd.h" { header "DataFormats/Candidate/interface/CandidateFwd.h" export * }
+  module "CompositeRefCandidateT.h" { header "DataFormats/Candidate/interface/CompositeRefCandidateT.h" export * }
+  module "OverlapChecker.h" { header "DataFormats/Candidate/interface/OverlapChecker.h" export * }
+  module "Particle.h" { header "DataFormats/Candidate/interface/Particle.h" export * }
+  module "LeafCandidate.h" { header "DataFormats/Candidate/interface/LeafCandidate.h" export * }
+  module "CompositeRefBaseCandidate.h" { header "DataFormats/Candidate/interface/CompositeRefBaseCandidate.h" export * }
+  module "CompositePtrCandidate.h" { header "DataFormats/Candidate/interface/CompositePtrCandidate.h" export *}
+
+  export *
+}
+
+module DataFormatsTrackingRecHit_xr {
+  module "InvalidTrackingRecHit.h" { header "DataFormats/TrackingRecHit/interface/InvalidTrackingRecHit.h" export * }
+  module "mayown_ptr.h" { header "DataFormats/TrackingRecHit/interface/mayown_ptr.h" export * }
+  module "KfComponentsHolder.h" { header "DataFormats/TrackingRecHit/interface/KfComponentsHolder.h" export * }
+  module "RecSegment.h" { header "DataFormats/TrackingRecHit/interface/RecSegment.h" export * }
+  module "RecHit2DLocalPos.h" { header "DataFormats/TrackingRecHit/interface/RecHit2DLocalPos.h" export * }
+  module "RecHit1D.h" { header "DataFormats/TrackingRecHit/interface/RecHit1D.h" export * }
+  module "TrackingRecHit.h" { header "DataFormats/TrackingRecHit/interface/TrackingRecHit.h" export * }
+  module "AlignmentPositionError.h" { header "DataFormats/TrackingRecHit/interface/AlignmentPositionError.h" export * }
+  module "TrackingRecHitGlobalState.h" { header "DataFormats/TrackingRecHit/interface/TrackingRecHitGlobalState.h" export * }
+  module "TrackingRecHitFwd.h" { header "DataFormats/TrackingRecHit/interface/TrackingRecHitFwd.h" export *}
+
+  export *
+}
+
+module DataFormatsSiPixelDetId_xr {
+  module "PixelBarrelNameUpgrade.h" { header "DataFormats/SiPixelDetId/interface/PixelBarrelNameUpgrade.h" export * }
+  module "PixelEndcapNameUpgrade.h" { header "DataFormats/SiPixelDetId/interface/PixelEndcapNameUpgrade.h" export * }
+  module "PixelSubdetector.h" { header "DataFormats/SiPixelDetId/interface/PixelSubdetector.h" export * }
+  module "PixelEndcapName.h" { header "DataFormats/SiPixelDetId/interface/PixelEndcapName.h" export * }
+  module "PXFDetId.h" { header "DataFormats/SiPixelDetId/interface/PXFDetId.h" export * }
+  module "PixelPannelType.h" { header "DataFormats/SiPixelDetId/interface/PixelPannelType.h" export * }
+  module "PixelChannelIdentifier.h" { header "DataFormats/SiPixelDetId/interface/PixelChannelIdentifier.h" export * }
+  module "PixelFEDChannel.h" { header "DataFormats/SiPixelDetId/interface/PixelFEDChannel.h" export * }
+  module "PixelModuleName.h" { header "DataFormats/SiPixelDetId/interface/PixelModuleName.h" export * }
+  module "PXBDetId.h" { header "DataFormats/SiPixelDetId/interface/PXBDetId.h" export * }
+  module "PixelBarrelName.h" { header "DataFormats/SiPixelDetId/interface/PixelBarrelName.h" export *}
+
+  export *
+}
+
+module DataFormatsSiStripDetId_xr {
+  module "StripSubdetector.h" { header "DataFormats/SiStripDetId/interface/StripSubdetector.h" export * }
+  module "SiStripDetId.h" { header "DataFormats/SiStripDetId/interface/SiStripDetId.h" export * }
+  module "SiStripSubStructure.h" { header "DataFormats/SiStripDetId/interface/SiStripSubStructure.h" export * }
+
+  export *
+}
+
+module DataFormatsTrajectorySeed_xr {
+  module "TrajectorySeedCollection.h" { header "DataFormats/TrajectorySeed/interface/TrajectorySeedCollection.h" export * }
+  module "PropagationDirection.h" { header "DataFormats/TrajectorySeed/interface/PropagationDirection.h" export * }
+  module "TrajectorySeed.h" { header "DataFormats/TrajectorySeed/interface/TrajectorySeed.h" export * }
+  module "BasicTrajectorySeed.h" { header "DataFormats/TrajectorySeed/interface/BasicTrajectorySeed.h" export * }
+
+  export *
+}
+
+module DataFormatsTrackCandidate_xr {
+  module "TrackCandidate.h" { header "DataFormats/TrackCandidate/interface/TrackCandidate.h" export * }
+  module "TrackCandidateCollection.h" { header "DataFormats/TrackCandidate/interface/TrackCandidateCollection.h" export * }
+
+  export *
+}
+
+module DataFormatsMuonDetId_xr {
+  module "DTWireId.h" { header "DataFormats/MuonDetId/interface/DTWireId.h" export * }
+  module "DTTracoId.h" { header "DataFormats/MuonDetId/interface/DTTracoId.h" export * }
+  module "DTBtiId.h" { header "DataFormats/MuonDetId/interface/DTBtiId.h" export * }
+  module "RPCCompDetId.h" { header "DataFormats/MuonDetId/interface/RPCCompDetId.h" export * }
+  module "DTChamberId.h" { header "DataFormats/MuonDetId/interface/DTChamberId.h" export * }
+  module "ME0DetId.h" { header "DataFormats/MuonDetId/interface/ME0DetId.h" export * }
+  module "CSCDetId.h" { header "DataFormats/MuonDetId/interface/CSCDetId.h" export * }
+  module "GEMDetId.h" { header "DataFormats/MuonDetId/interface/GEMDetId.h" export * }
+  module "DTSuperLayerId.h" { header "DataFormats/MuonDetId/interface/DTSuperLayerId.h" export * }
+  module "DTSectCollId.h" { header "DataFormats/MuonDetId/interface/DTSectCollId.h" export * }
+  module "MuonSubdetId.h" { header "DataFormats/MuonDetId/interface/MuonSubdetId.h" export * }
+  module "CSCIndexer.h" { header "DataFormats/MuonDetId/interface/CSCIndexer.h" export * }
+  module "DTLayerId.h" { header "DataFormats/MuonDetId/interface/DTLayerId.h" export * }
+  module "CSCTriggerNumbering.h" { header "DataFormats/MuonDetId/interface/CSCTriggerNumbering.h" export * }
+  module "RPCDetId.h" { header "DataFormats/MuonDetId/interface/RPCDetId.h" export * }
+
+  export *
+}
+
+module DataFormatsBeamSpot_xr {
+  module "BeamSpot.h" { header "DataFormats/BeamSpot/interface/BeamSpot.h" export * }
+  export *
+}
+
+module DataFormatsTrackerCommon_xr {
+  module "TrackerTopology.h" { header "DataFormats/TrackerCommon/interface/TrackerTopology.h" export * }
+  module "TrackerDetSide.h" { header "DataFormats/TrackerCommon/interface/TrackerDetSide.h" export * }
+  module "ClusterSummary.h" { header "DataFormats/TrackerCommon/interface/ClusterSummary.h" export * }
+
+  export *
+}
+
+module DataFormatsTrackReco_xr {
+  module "DeDxHit.h" { header "DataFormats/TrackReco/interface/DeDxHit.h" export * }
+  module "TrackExtraBase.h" { header "DataFormats/TrackReco/interface/TrackExtraBase.h" export * }
+  module "TrackResiduals.h" { header "DataFormats/TrackReco/interface/TrackResiduals.h" export * }
+  module "TrackBase.h" { header "DataFormats/TrackReco/interface/TrackBase.h" export * }
+  module "TrackExtra.h" { header "DataFormats/TrackReco/interface/TrackExtra.h" export * }
+  module "TrackFwd.h" { header "DataFormats/TrackReco/interface/TrackFwd.h" export * }
+  module "SeedStopInfo.h" { header "DataFormats/TrackReco/interface/SeedStopInfo.h" export * }
+  module "TrackExtraFwd.h" { header "DataFormats/TrackReco/interface/TrackExtraFwd.h" export * }
+// Cyclic dependency
+//  module "TrajectoryStopReasons.h" { header "DataFormats/TrackReco/interface/TrajectoryStopReasons.h" export * }
+  module "Track.h" { header "DataFormats/TrackReco/interface/Track.h" export * }
+  module "SeedStopReason.h" { header "DataFormats/TrackReco/interface/SeedStopReason.h" export * }
+  module "TrackToTrackMap.h" { header "DataFormats/TrackReco/interface/TrackToTrackMap.h" export * }
+  module "DeDxData.h" { header "DataFormats/TrackReco/interface/DeDxData.h" export * }
+  module "DeDxHitInfo.h" { header "DataFormats/TrackReco/interface/DeDxHitInfo.h" export * }
+  module "TrackDeDxHits.h" { header "DataFormats/TrackReco/interface/TrackDeDxHits.h" export * }
+  module "HitPattern.h" { header "DataFormats/TrackReco/interface/HitPattern.h" export * }
+  module "fillCovariance.h" { header "DataFormats/TrackReco/interface/fillCovariance.h" export * }
+
+  export *
+}
+
+module DataFormatsCaloRecHit_xr {
+  module "CaloCluster.h" { header "DataFormats/CaloRecHit/interface/CaloCluster.h" export * }
+  module "CaloRecHit.h" { header "DataFormats/CaloRecHit/interface/CaloRecHit.h" export * }
+  module "CaloID.h" { header "DataFormats/CaloRecHit/interface/CaloID.h" export * }
+  module "CaloClusterFwd.h" { header "DataFormats/CaloRecHit/interface/CaloClusterFwd.h" export * }
+
+  export *
+}
+
+module DataFormatsEgammaReco_xr {
+  module "SuperCluster.h" { header "DataFormats/EgammaReco/interface/SuperCluster.h" export * }
+  module "ClusterShapeFwd.h" { header "DataFormats/EgammaReco/interface/ClusterShapeFwd.h" export * }
+  module "EgammaTriggerFwd.h" { header "DataFormats/EgammaReco/interface/EgammaTriggerFwd.h" export * }
+  module "BasicClusterShapeAssociation.h" { header "DataFormats/EgammaReco/interface/BasicClusterShapeAssociation.h" export * }
+  module "EgammaTrigger.h" { header "DataFormats/EgammaReco/interface/EgammaTrigger.h" export * }
+  module "HFEMClusterShape.h" { header "DataFormats/EgammaReco/interface/HFEMClusterShape.h" export * }
+  module "ElectronSeed.h" { header "DataFormats/EgammaReco/interface/ElectronSeed.h" export * }
+  module "BasicCluster.h" { header "DataFormats/EgammaReco/interface/BasicCluster.h" export * }
+  module "HFEMClusterShapeFwd.h" { header "DataFormats/EgammaReco/interface/HFEMClusterShapeFwd.h" export * }
+  module "ElectronSeedFwd.h" { header "DataFormats/EgammaReco/interface/ElectronSeedFwd.h" export * }
+  module "SuperClusterFwd.h" { header "DataFormats/EgammaReco/interface/SuperClusterFwd.h" export * }
+  module "PreshowerClusterShapeFwd.h" { header "DataFormats/EgammaReco/interface/PreshowerClusterShapeFwd.h" export * }
+  module "PreshowerClusterFwd.h" { header "DataFormats/EgammaReco/interface/PreshowerClusterFwd.h" export * }
+  module "PreshowerClusterShape.h" { header "DataFormats/EgammaReco/interface/PreshowerClusterShape.h" export * }
+  module "ClusterShape.h" { header "DataFormats/EgammaReco/interface/ClusterShape.h" export * }
+  module "PreshowerCluster.h" { header "DataFormats/EgammaReco/interface/PreshowerCluster.h" export * }
+  module "BasicClusterFwd.h" { header "DataFormats/EgammaReco/interface/BasicClusterFwd.h" export * }
+  module "HFEMClusterShapeAssociation.h" { header "DataFormats/EgammaReco/interface/HFEMClusterShapeAssociation.h" export * }
 
   export *
 }
